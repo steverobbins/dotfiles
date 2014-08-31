@@ -1,7 +1,11 @@
-PATH=~/bin:$PATH
+. ~/bin/git-completion
+. ~/bin/svn-color
+. ~/bin/git-prompt
 
+
+PATH=~/bin:$PATH
 . ~/bin/dotfiles/bash/alias
 . ~/bin/dotfiles/bash/ps1
 . ~/bin/dotfiles/bash/env
-. ~/bin/dotfiles/bash/git-completion
-. ~/bin/dotfiles/bash/svn-color
+
+. ~/bin/dotfiles/bash/motd

@@ -30,11 +30,11 @@ bash_prompt() {
   PS1="${W}"
   USERHOST="$USER@$HOSTNAME"
   CNT=$(echo $USERHOST | wc -m)
-  CNT=`expr 69 - $CNT`
-  SPACES=$(printf "%${CNT}s" | tr ' ' '─')
-  PS1="$PS1\n${W}┌ $C$USER@$HOSTNAME$W$SPACES $Y\t$W ┨"
-  PS1="$PS1\n${W}│ $G\$(__cur_dir)$B\$(__git_stuff)$NONE"
-  PS1="$PS1\n${W}└─➤ $NONE\\$ "
+  CNT=`expr 67 - $CNT`
+  SPACES=$(printf "%${CNT}s" | tr ' ' '-')
+  PS1="$PS1\n${W}+ $C$USER@$HOSTNAME$W $SPACES $Y\t$W +"
+  PS1="$PS1\n${W}| $G\$(__cur_dir)$B\$(__git_stuff)$NONE"
+  PS1="$PS1\n$NONE\\$ "
 }
 
 bash_prompt
