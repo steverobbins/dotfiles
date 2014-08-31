@@ -8,7 +8,7 @@ Make yo terminal look like this
 # Features
 
 * Dynamic MOTD
-* 80 PS1 with time stamp (super useful when running lengthy scripts)
+* 80 character PS1 with time stamp (useful for timing scripts)
 * Useful bash aliases
 * Git stuffs
   * Branch added to next to pwd ![branch](http://i.imgur.com/gYEzSFv.png)
