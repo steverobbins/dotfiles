@@ -25,6 +25,3 @@ curl -o ~/bin/modman https://raw.githubusercontent.com/colinmollenhour/modman/ma
 chmod +x ~/bin/modman
 
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-
-source ~/.bash_profile
-cd ~
