@@ -1,0 +1,37 @@
+[user]
+    name = Steve Robbins
+    email = steven.j.robbins@gmail.com
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = true
+[color "status"]
+    added = green bold
+    changed  = cyan bold
+    untracked = yellow bold
+[color "branch"]
+    current = cyan bold
+    local = yellow
+    remote = green
+[push]
+    default = tracking
+[diff]
+    renames = copies
+[rerere]
+    enabled = true
+[blame]
+    date = short
+[status]
+    submodulesummary = true
+    relativePaths = false
+    showUntrackedFiles = all
+[notes]
+    rewriteRef = refs/notes/*
+[merge]
+    defaultToUpstream = true
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    graph = log --graph --all --decorate
+[core]
+    mergeoptions = --no-edit
