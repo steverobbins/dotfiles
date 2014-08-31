@@ -19,6 +19,7 @@ Make yo terminal look like this
   * [modman](https://github.com/colinmollenhour/modman)
   * [n98-magerun.phar](https://github.com/netz98/n98-magerun)
   * [svn-color](https://github.com/jmlacroix/svn-color)
+  * [Homebrew](http://brew.sh/)
 
 # Installation (mac)
 
