@@ -18,8 +18,14 @@ chmod +x ~/bin/git-prompt
 curl -o ~/bin/svn-color https://raw.githubusercontent.com/jmlacroix/svn-color/master/svn-color.sh
 chmod +x ~/bin/svn-color
 
-curl -o ~/bin/n98-magerun.phar https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar
-chmod +x ~/bin/n98-magerun.phar
+curl -sS https://getcomposer.org/installer | php -- --install-dir=~/bin
+
+git clone https://github.com/netz98/n98-magerun.git ~/bin/n98-magerun
+cd ~/bin/n98-magerun
+composer install
+chmod +x bin/n98-magerun
+cd ../
+ln - s n98-magerun/bin/n98-magerun magerun
 
 curl -o ~/bin/modman https://raw.githubusercontent.com/colinmollenhour/modman/master/modman
 chmod +x ~/bin/modman
