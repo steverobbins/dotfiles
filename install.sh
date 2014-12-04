@@ -20,12 +20,13 @@ chmod +x ~/bin/svn-color
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=~/bin
 
-git clone https://github.com/netz98/n98-magerun.git ~/bin/n98-magerun
-cd ~/bin/n98-magerun
+mkdir ~/Project
+git clone https://github.com/netz98/n98-magerun.git ~/Project/n98-magerun
+cd ~/Project/n98-magerun
 composer install
 chmod +x bin/n98-magerun
 cd ../
-ln - s n98-magerun/bin/n98-magerun magerun
+ln -s ~/Project/n98-magerun/bin/n98-magerun magerun
 
 curl -o ~/bin/modman https://raw.githubusercontent.com/colinmollenhour/modman/master/modman
 chmod +x ~/bin/modman
