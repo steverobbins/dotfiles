@@ -31,4 +31,4 @@ ln -s ~/Project/n98-magerun/bin/n98-magerun magerun
 curl -o ~/bin/modman https://raw.githubusercontent.com/colinmollenhour/modman/master/modman
 chmod +x ~/bin/modman
 
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
