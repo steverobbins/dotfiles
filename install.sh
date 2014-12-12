@@ -18,7 +18,9 @@ chmod +x ~/bin/git-prompt
 curl -o ~/bin/svn-color https://raw.githubusercontent.com/jmlacroix/svn-color/master/svn-color.sh
 chmod +x ~/bin/svn-color
 
-curl -sS https://getcomposer.org/installer | php -- --install-dir=~/bin
+cd ~
+curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
+mv bin/composer.phar bin/composer
 
 mkdir ~/Project
 git clone https://github.com/netz98/n98-magerun.git ~/Project/n98-magerun
